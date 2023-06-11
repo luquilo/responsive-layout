@@ -1,0 +1,25 @@
+/* ## utama
+display = flex
+flex-direction = columm / row
+
+
+
+
+## lain lain
+flex-grow
+
+flex-shrink = 0 */
+
+
+/*  */
+
+.utama{
+    display: flex;
+    flex-direction: row;  /* flex-direction: column;  */
+}
+
+.lain-lain{
+    flex-grow: 1;  /* membuat item jadi melebar */
+    flex-shrink: 0; /* membuat item tetap dengan width & height bawaannya (tidak melebar dan tidak mengecil) */
+    
+}

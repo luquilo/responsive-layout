@@ -1,12 +1,15 @@
 .flexbox-container{
     height: 900px;
-    display: flex;
     background-color: yellow;
     border: 5px solid black;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    
+    
+    
+    
+    display: flex;
+    flex-direction: column;
 }
 
 .flexbox-item{
