@@ -1,17 +1,10 @@
-/* ## utama
-display = flex
-flex-direction = columm / row
+/* 
+    justify-content is the main axis
+    align-item is the cross axis
 
+    flexbox only need 1 parent as container, and at least one children
 
-
-
-## lain lain
-flex-grow
-
-flex-shrink = 0 */
-
-
-/*  */
+*/
 
 .utama{
     display: flex;
@@ -22,4 +15,24 @@ flex-shrink = 0 */
     flex-grow: 1;  /* membuat item jadi melebar */
     flex-shrink: 0; /* membuat item tetap dengan width & height bawaannya (tidak melebar dan tidak mengecil) */
     
+}
+
+.align-content{
+    /* not much being used */
+    align-content: space-between;
+}
+
+.flex-basis{
+    /* mmembuat berbagai komponen memiliki lebar yang sesuai dengan skala */
+
+}
+
+.align-self{
+    align-self: center; /* overwriting some flex stuff */
+}
+
+.order{
+    /* not recommended */
+    /* to re-arrange the order of some component */
+    order: 1; /* memberikan urutan pada component */
 }

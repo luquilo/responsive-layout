@@ -2,14 +2,13 @@
     height: 900px;
     background-color: yellow;
     border: 5px solid black;
-    justify-content: flex-end;
     align-items: center;
     
     
     
     
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .flexbox-item{
@@ -21,13 +20,22 @@
 
 .flexbox-item-1{
     min-height: 100px;
+    flex-basis: 0;
+    flex-grow: 1;
+    order: 3;
 }
 
 .flexbox-item-2{
+    flex-basis: 0;
+    flex-grow: 2;
     min-height: 200px;
+    order: 1;
 }
 
 .flexbox-item-3{
+    order: 2;
+    flex-basis: 0;
+    flex-grow: 3;
     min-height: 300px;
 
 }
