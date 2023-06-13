@@ -1,0 +1,46 @@
+/*
+    flex = 1 dimension
+    grid = 2 dimension
+
+    we have to define spesific columns or rows
+
+
+
+
+    grid-gap
+    span
+    align-self
+    justify-self
+
+
+
+    
+
+*/
+
+.grid-template-columns-fraction{
+    /* fraction 2 banding 1 */
+    grid-template-columns: 2fr 1fr;
+}
+
+.grid-template-columns-repeat{
+    /* making 4 grid with 100px width each */
+    grid-template-columns: repeat(4, 100px);
+}
+
+.grid-auto-rows{
+    /* minimal 150px, maksimal auto ngikut isi dari konten  */
+    grid-auto-rows: minmax(150px, auto);
+}
+
+.grid-gap{
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+
+    /* the shorthand is : */
+    grid-gap: 20px;
+}
+.grid-span{
+    grid-row: span 1;
+    grid-column: span 2;
+}
