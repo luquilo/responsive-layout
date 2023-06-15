@@ -15,6 +15,10 @@
 
     grid tracks = (grid-template-columns, grid-template-rows)
 
+    grid lines = 
+
+    garis pada grid digunakan sebagai titik acuan di mana sebuah grid track dimulai dan diakhiri.
+
     
 
 */

@@ -1,10 +1,54 @@
-.container div{
-    border: 1px dashed black;
+body{
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
 
 .container{
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px dashed black;
+    background: antiquewhite;
+    
+    
+    
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
 
+.grid-item{
+    grid-auto-rows: minmax(200px, 200px);
+    border: 1px dashed black;
+    padding: 20px;
+}
 /* updated to the new branch */
+.genap{
+    background: greenyellow;
+}
+
+.ganjil{
+    background: yellow;
+}
+
+.box1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.box2{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
