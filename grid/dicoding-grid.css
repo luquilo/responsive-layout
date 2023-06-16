@@ -22,7 +22,7 @@ body{
 }
 
 .grid-item{
-    grid-auto-rows: minmax(200px, 200px);
+    /* grid-auto-rows: minmax(400px, 500px); gak tau fungsinya, nonton video lagi nanti */
     border: 1px dashed black;
     padding: 20px;
 }
