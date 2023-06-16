@@ -1,4 +1,10 @@
 /*
+
+    - dont use single letter
+- never abbreviate (singkat){FN = fullName, DP = discountPrice}
+- dont put datatypes in your names
+
+
     flex = 1 dimension
     grid = 2 dimension
 
@@ -15,7 +21,9 @@
 
     grid tracks = (grid-template-columns, grid-template-rows)
 
-    grid lines = 
+    grid lines = (penentuan lebar dan tinggi sebuah grid item)
+
+    grid gutters = 
 
     garis pada grid digunakan sebagai titik acuan di mana sebuah grid track dimulai dan diakhiri.
 
@@ -23,29 +31,29 @@
 
 */
 
-.grid-template-columns-fraction{
-    /* fraction 2 banding 1 */
-    grid-template-columns: 2fr 1fr;
+.grid-template-columns-fraction {
+  /* fraction 2 banding 1 */
+  grid-template-columns: 2fr 1fr;
 }
 
-.grid-template-columns-repeat{
-    /* making 4 grid with 100px width each */
-    grid-template-columns: repeat(4, 100px);
+.grid-template-columns-repeat {
+  /* making 4 grid with 100px width each */
+  grid-template-columns: repeat(4, 100px);
 }
 
-.grid-auto-rows{
-    /* minimal 150px, maksimal auto ngikut isi dari konten  */
-    grid-auto-rows: minmax(150px, auto);
+.grid-auto-rows {
+  /* minimal 150px, maksimal auto ngikut isi dari konten  */
+  grid-auto-rows: minmax(150px, auto);
 }
 
-.grid-gap{
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
+.grid-gap {
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
 
-    /* the shorthand is : */
-    grid-gap: 20px;
+  /* the shorthand is : */
+  grid-gap: 20px;
 }
-.grid-span{
-    grid-row: span 1;
-    grid-column: span 2;
+.grid-span {
+  grid-row: span 1;
+  grid-column: span 2;
 }

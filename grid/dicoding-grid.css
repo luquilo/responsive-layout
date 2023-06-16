@@ -19,12 +19,10 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
 }
 
 .grid-item{
-    grid-auto-rows: minmax(200px, 200px);
+    /* grid-auto-rows: minmax(400px, 500px); gak tau fungsinya, nonton video lagi nanti */
     border: 1px dashed black;
     padding: 20px;
 }
