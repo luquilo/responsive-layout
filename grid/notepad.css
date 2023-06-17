@@ -46,6 +46,8 @@
   grid-auto-rows: minmax(150px, auto);
 }
 
+
+/* outdated grid gap */
 .grid-gap {
   grid-row-gap: 20px;
   grid-column-gap: 20px;
@@ -56,4 +58,22 @@
 .grid-span {
   grid-row: span 1;
   grid-column: span 2;
+}
+
+/* newer grid gap syntax */
+.grid-gap {
+  row-gap: 20px;
+  column-gap: 20px;
+
+  /* the shorthand is : */
+  grid-gap: 20px;
+}
+.grid-span {
+  grid-row: span 1;
+  grid-column: span 2;
+}
+
+
+.grid-gap-shorthand{
+   gap: 16px 10px; /* row and column */
 }

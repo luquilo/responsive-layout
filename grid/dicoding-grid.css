@@ -9,10 +9,13 @@ body{
 
 .container{
     width: 100%;
-    max-width: 600px;
+    max-width: 900px;
     padding: 20px;
     border: 1px dashed black;
     background: antiquewhite;
+    row-gap: 16px;
+    column-gap: 10px;
+
     
     
     
@@ -23,8 +26,9 @@ body{
 
 .grid-item{
     /* grid-auto-rows: minmax(400px, 500px); gak tau fungsinya, nonton video lagi nanti */
-    border: 1px dashed black;
+    border: 2px solid black;
     padding: 20px;
+    border-radius: 10px;
 }
 /* updated to the new branch */
 .genap{
