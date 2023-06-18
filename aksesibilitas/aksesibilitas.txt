@@ -1,1 +1,32 @@
 bismillah
+
+#gangguan penglihatan
+- screen magnification (pembesar layar)
+- text-to-speech
+- screen reader
+
+
+#motorik atau ketangkasan (tak bisa gerak secara aktif)
+- keyboard
+- eye tracking
+
+
+#gangguan pendengaran
+- sangat mengandalkan caption / transkrip / subtitle untuk konten bersuara
+
+#gangguan kognitif ?sangat luas? (ADHD, autisme) disebabkan penurunan fungsi otak
+- hindari animasi yang tampak begitu berat
+- kombinasi warna
+
+
+todo:
+# keyboard accessibility (onFocus) { tab, shift, arrow key, enter / return key, space and so on }
+- editable content di desain memiliki "focus"
+- tidak boleh membuat button dari div / span yang diberi event handler
+- urutan tabindex (https://www.dicoding.com/academies/219/tutorials/9256?from=9251) ini cara yang jelek menurut lighthouse
+
+
+#pseudo-class (:focus, :hover)
+
+#solusi gangguan penglihatan
+
