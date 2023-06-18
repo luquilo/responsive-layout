@@ -1,0 +1,5 @@
+#bab responsive layout
+membuat layar responsive pakai grid, 
+ini link github contoh pemakaian media query + grid
+https://github.com/dicodingacademy/a219-mfwde-labs/tree/204-dicoding-blog-other-optimization
+
