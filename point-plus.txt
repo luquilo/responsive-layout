@@ -1,0 +1,1 @@
+membuat style berbeda ketika aktif (on-hover, "on-focus") {memberikan efek tampilan berbeda}
