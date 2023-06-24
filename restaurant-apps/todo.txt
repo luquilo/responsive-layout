@@ -1,0 +1,13 @@
+responsive mobile first , media query
+navigation drawer
+screen reader
+
+WEBPACK
+
+    src → public: untuk menyimpan aset yang dapat diakses secara public seperti favicon, icons, gambar, video, atau font.
+    src → styles: untuk menyimpan berkas styling seperti CSS.
+    src → scripts: untuk menyimpan berkas JavaScript, termasuk entry point.
+
+    src → templates: untuk menyimpan aset HTML.
+
+1) 

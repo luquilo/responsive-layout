@@ -1,0 +1,9 @@
+node_modules/
+.vscode/
+# Ignore Webpack build artifacts
+/dist/
+/build/
+
+# Ignore generated bundles
+*.bundle.js
+*.bundle.js.map
