@@ -1,0 +1,45 @@
+/* @media screen and (min-width: 600px) {
+
+}
+ */
+
+body{
+    background: yellow;
+}
+
+#drawer {
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    /* background: yellow; */
+    /* menyembunyikan drawer */
+    transform: translate(-250px, 0);
+    transition: transform 0.3s ease-in-out;
+    background-color: #111;
+  }
+  
+  #drawer.open {
+    transform: translate(0, 0);
+  }
+  
+  #drawer ul {
+    list-style-type: none;
+    padding: 0 16px;
+  }
+  
+  #drawer li {
+    padding: 5px 0;
+  }
+  
+  #drawer a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+  }
+  
+  #hamburger {
+    display: block;
+    font-size: 32px;
+    text-decoration: none;
+    color: black;
+  }

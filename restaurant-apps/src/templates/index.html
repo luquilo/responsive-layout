@@ -5,29 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant Apps</title>
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/small.css" media="screen and (min-width: 480px)">
-    <link rel="stylesheet" href="../styles/large.css" media="screen and (min-width: 768px)">
-    <link rel="stylesheet" href="../styles/x-large.css" media="screen and (min-width: 1000px)">
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="../styles/small.css"
+      media="screen and (max-width: 600px)"
+    />
+    <link
+      rel="stylesheet"
+      href="../styles/large.css"
+      media="screen and (min-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="../styles/x-large.css"
+      media="screen and (min-width: 1000px)"
+    />
   </head>
   <body>
-
-
     <header>
       <h1>Restaurant App</h1>
     </header>
-    <nav>
-        <ul>
-          <li class="nav-item-1"><a href="index.html">Home</a></li>
-          <li class="nav-item-2"><a href="#">Favorite</a></li>
-          <li class="nav-item-3"><a href="https://www.instagram.com/why.luq">About Us</a></li>
-        </ul>
+    <nav id="drawer">
+      <ul>
+        <li class="nav-item-1"><a href="index.html">Home</a></li>
+        <li class="nav-item-2"><a href="#">Favorite</a></li>
+        <li class="nav-item-3">
+          <a href="https://www.instagram.com/why.luq">About Us</a>
+        </li>
+      </ul>
     </nav>
 
+    <main>
+      <!-- drawer -->
+      <a id="hamburger" href="#">☰</a>
+      
+      <!-- jumbotron -->
+      <div class="jumbotron">
+        <img
+          src="../public/images/heros/hero-image_2.jpg"
+          alt="chef"
+          class="hero-image"
+          width="100%"
+        />
+      </div>
+    </main>
 
-    <!-- jumbotron -->
-    <div class="jumbotron">
-      <img src="../public/images/heros/hero-image_2.jpg" alt="chef" class="hero-image" width="100%">
-    </div>
+    <script src="../scripts/drawer-script.js"></script>
   </body>
 </html>

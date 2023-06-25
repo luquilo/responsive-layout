@@ -1,52 +1,53 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style-type: none;
 }
 
-html, body, main {
+html,
+body,
+main {
   width: 100%;
+}
+
+main {
+  padding: 16px;
 }
 
 header {
 }
 
-header h1{
+header h1 {
   text-align: center;
-  font-size: 5em;
+  font-size: 2em;
   padding: 20px;
 }
 
- nav {
+nav {
   padding: 20px;
-} 
+}
 nav ul {
   /* width: 100%; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  
 }
-
 
 nav ul li {
-  list-style-type: none;
   width: fit-content;
-  font-size: 2em;  
+  font-size: 2em;
 }
 
-nav ul li a {
-  text-decoration: none;
-
-}
-
-.nav-item{
-  
-}
-
-.jumbotron{
+.jumbotron {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#hamburger{
+  display: none;
 }
