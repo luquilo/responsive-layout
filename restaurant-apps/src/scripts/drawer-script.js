@@ -16,6 +16,7 @@ mainElement.addEventListener('click', event => {
     event.stopPropagation();
 })
 
+// membuat fungsi sementara untuk menerapkan style ease-out css pada drawer
 mainElement.addEventListener('click', event => {
     setTimeout(() => {
         drawerElement.classList.remove('close');
