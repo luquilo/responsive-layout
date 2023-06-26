@@ -7,6 +7,10 @@
   list-style-type: none;
 }
 
+.hero-image{
+  width: 100%;
+}
+
 html,
 body,
 main {
@@ -19,7 +23,7 @@ main {
 
 header h1 {
   text-align: center;
-  font-size: 2em;
+  font-size: 4em;
   padding: 20px;
 }
 
@@ -39,6 +43,10 @@ nav ul li {
   font-size: 2em;
 }
 
+nav ul li a {
+  color: black;
+}
+
 .jumbotron {
   display: flex;
   justify-content: center;
@@ -54,14 +62,32 @@ nav ul li {
 .restaurants{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .restaurant{
-  padding: 5px;
+  padding: 25px;
   border-radius: 15px;
   margin: 15px;
   box-shadow: 5px 5px 20px;
 }
 
-.restaurant img{
+.explore{
+  text-align: center;
+  padding: 20px;
+  font-size: 3em;
+}
+
+.restaurant h3,h4, p{
+  padding: 5px;
+}
+
+footer{
+  color: #fefefe;
+  padding: 20px;
+  background: rgb(151, 151, 151);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }

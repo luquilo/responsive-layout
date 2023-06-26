@@ -1,10 +1,6 @@
 body{
 }
 
-.hero-image{
-    width: 1000px;
-}
-
 .restaurants{
     grid-template-columns: repeat(3, 1fr);
 }
