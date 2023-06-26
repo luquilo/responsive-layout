@@ -1,0 +1,4 @@
+/* untuk medium display () */
+.restaurants{
+  grid-template-columns: repeat(2, 1fr);
+}

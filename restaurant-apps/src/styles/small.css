@@ -1,45 +1,67 @@
-/* @media screen and (min-width: 600px) {
-
-}
- */
-
-body{
-    background: yellow;
-}
 
 #drawer {
-    width: 250px;
-    height: 100%;
-    position: absolute;
-    /* background: yellow; */
-    /* menyembunyikan drawer */
-    transform: translate(-250px, 0);
-    transition: transform 0.3s ease-in-out;
-    background-color: #111;
-  }
-  
-  #drawer.open {
-    transform: translate(0, 0);
-  }
-  
-  #drawer ul {
-    list-style-type: none;
-    padding: 0 16px;
-  }
-  
-  #drawer li {
-    padding: 5px 0;
-  }
-  
-  #drawer a {
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-  }
-  
-  #hamburger {
-    display: block;
-    font-size: 32px;
-    text-decoration: none;
-    color: black;
-  }
+  width: 250px;
+  height: fit-content;
+  position: absolute;
+  transform: translate(-250px, 0);
+  background-color: #fff;
+}
+
+#drawer.open {
+  transform: translate(0, 0);
+  transition: transform 0.3s ease-in-out;
+}
+
+#drawer.close{
+  transition: transform 0.3s ease-in-out;
+}
+
+#drawer ul {
+  list-style-type: none;
+}
+
+#drawer li {
+  padding: 20px 30px;
+}
+
+.nav-item-1{
+  border: 2px solid black;
+}
+.nav-item-2{
+  border-right:2px  solid black;
+  border-left: 2px solid black;
+}
+.nav-item-3{
+  border: 2px solid black;
+}
+
+#drawer a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
+
+#hamburger {
+  display: block;
+  font-size: 32px;
+  text-decoration: none;
+  color: black;
+  width: fit-content;
+  padding: 20px;
+}
+
+nav{
+  padding: 0;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: column;
+
+}
+
+nav ul li {
+  width: 100%;
+  padding: 20px;
+
+}
