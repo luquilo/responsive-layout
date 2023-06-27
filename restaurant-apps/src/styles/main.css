@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
   text-decoration: none;
   list-style-type: none;
+  font-family: Montserrat;
 }
 
 .hero-image{
@@ -31,7 +31,6 @@ nav {
   padding: 20px;
 }
 nav ul {
-  /* width: 100%; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -90,4 +89,18 @@ footer{
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+ 
+.skip-link:focus {
+   top: 0;
 }

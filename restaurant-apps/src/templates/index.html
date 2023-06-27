@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant Apps</title>
+    <title>Restaurant App</title>
     <link rel="stylesheet" href="../styles/main.css" />
     <link
       rel="stylesheet"
@@ -26,11 +26,17 @@
       href="../styles/x-large.css"
       media="screen and (min-width: 1200px)"
     />
-    <link rel="icon" type="image/x-icon" href="../public/images/logo.png">
+    <link rel="icon" type="image/x-icon" href="../public/images/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- <a href="#hamburger" class="skip-link">Menuju ke konten</a> -->
+    <a href="#main-content" class="skip-link">Menuju ke konten</a>
     <header>
-      <h1>Restaurant App</h1>
+      <h1 id="main-content">Restaurant App</h1>
     </header>
     <nav id="drawer">
       <ul>
@@ -51,7 +57,7 @@
         <div class="jumbotron">
           <img
             src="../public/images/heros/hero-image_2.jpg"
-            alt="chef"
+            alt="jumbotron image"
             class="hero-image"
             width="100%"
           />
@@ -62,7 +68,11 @@
 
       <section class="restaurants">
         <article class="restaurant">
-          <img src="https://restaurant-api.dicoding.dev/images/medium/41" width="100%" />
+          <img
+            src="https://restaurant-api.dicoding.dev/images/medium/41"
+            width="100%"
+            alt="Bring Your Phone Cafe Restaurant Image"
+          />
           <h3>Bring Your Phone Cafe</h3>
           <h4>Kota Medan</h4>
           <p>
@@ -76,7 +86,11 @@
           </p>
         </article>
         <article class="restaurant">
-          <img src="https://restaurant-api.dicoding.dev/images/medium/07" width="100%" />
+          <img
+            src="https://restaurant-api.dicoding.dev/images/medium/07"
+            width="100%"
+            alt="Run The Gun Restaurant Image"
+          />
           <h3>Run The Gun</h3>
           <h4>Kota Bali</h4>
           <p>
@@ -90,7 +104,11 @@
           </p>
         </article>
         <article class="restaurant">
-          <img src="https://restaurant-api.dicoding.dev/images/medium/29" width="100%" />
+          <img
+            src="https://restaurant-api.dicoding.dev/images/medium/29"
+            width="100%"
+            alt="Pangsit Express Restaurant Image"
+          />
           <h3>Pangsit Express</h3>
           <h4>Kota Ternate</h4>
           <p>
@@ -104,7 +122,11 @@
           </p>
         </article>
         <article class="restaurant">
-          <img src="https://restaurant-api.dicoding.dev/images/medium/38" width="100%" />
+          <img
+            src="https://restaurant-api.dicoding.dev/images/medium/38"
+            width="100%"
+            alt="Ducky Duck Restaurant Image"
+          />
           <h3>Ducky Duck</h3>
           <h4>Kota Malang</h4>
           <p>
@@ -118,7 +140,11 @@
           </p>
         </article>
         <article class="restaurant">
-          <img src="https://restaurant-api.dicoding.dev/images/medium/40" width="100%" />
+          <img
+            src="https://restaurant-api.dicoding.dev/images/medium/40"
+            width="100%"
+            alt="Kafein Restaurant Image"
+          />
           <h3>Kafein</h3>
           <h4>Kota Bali</h4>
           <p>
@@ -133,7 +159,11 @@
           </p>
         </article>
         <article class="restaurant">
-          <img src="https://restaurant-api.dicoding.dev/images/medium/08" width="100%" />
+          <img
+            src="https://restaurant-api.dicoding.dev/images/medium/08"
+            width="100%"
+            alt="Makan Mudah Restaurant Image"
+          />
           <h3>Makan Mudah</h3>
           <h4>Kota Malang</h4>
           <p>
@@ -148,7 +178,11 @@
           </p>
         </article>
         <article class="restaurant">
-          <img src="https://restaurant-api.dicoding.dev/images/medium/32" width="100%" />
+          <img
+            src="https://restaurant-api.dicoding.dev/images/medium/32"
+            width="100%"
+            alt="Saya Suka Restaurant Image"
+          />
           <h3>Saya Suka</h3>
           <h4>Kota Surabaya</h4>
           <p>
@@ -163,7 +197,11 @@
           </p>
         </article>
         <article class="restaurant">
-          <img src="https://restaurant-api.dicoding.dev/images/medium/45" width="100%" />
+          <img
+            src="https://restaurant-api.dicoding.dev/images/medium/45"
+            width="100%"
+            alt="Gigitan Cepat Restaurant Image"
+          />
           <h3>Gigitan Cepat</h3>
           <h4>Kota Aceh</h4>
           <p>
@@ -178,7 +216,11 @@
           </p>
         </article>
         <article class="restaurant">
-          <img src="https://restaurant-api.dicoding.dev/images/medium/04" width="100%" />
+          <img
+            src="https://restaurant-api.dicoding.dev/images/medium/04"
+            width="100%"
+            alt="Fairy Cafe Restaurant Image"
+          />
           <h3>Fairy Cafe</h3>
           <h4>Kota Malang</h4>
           <p>
@@ -195,9 +237,7 @@
       </section>
     </main>
 
-    <footer>
-      Copyright © 2023 - Restaurant App
-    </footer>
+    <footer>Copyright © 2023 - Restaurant App</footer>
 
     <script src="../scripts/drawer-script.js"></script>
   </body>
