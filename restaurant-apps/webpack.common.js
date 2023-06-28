@@ -17,20 +17,17 @@ module.exports = {
       {
         test: /\.css$/,
         // exclude: /\.module\.css$/i,
-        use: [
-          MiniCssExtractPlugin.loader, //pengganti style loader
-          "css-loader",
-        ],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-              name: '[name].[ext]',
-              outputPath: 'images/',
-              publicPath: 'images/',
+              name: "[name].[ext]",
+              outputPath: "images/",
+              publicPath: "images/",
             },
           },
         ],

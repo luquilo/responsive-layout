@@ -8,7 +8,7 @@ module.exports = merge(common, {
   devServer: {
     headers: {
       'Access-Control-Allow-Origin': '*',
-      'Content-Type': 'text/html',
+      // 'Content-Type': 'text/html',
     },
     static: path.resolve(__dirname, 'dist'),
     open: true,
