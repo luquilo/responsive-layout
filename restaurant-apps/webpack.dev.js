@@ -10,7 +10,10 @@ module.exports = merge(common, {
       'Access-Control-Allow-Origin': '*',
       // 'Content-Type': 'text/html',
     },
-    static: path.resolve(__dirname, 'dist'),
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+      watch: true,
+    },
     open: true,
     port: 9001,
     client: {
