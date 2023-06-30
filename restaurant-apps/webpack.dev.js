@@ -48,5 +48,6 @@ module.exports = merge(common, {
       },
     },
     compress: true,
+    historyApiFallback: true,
   },
 });
