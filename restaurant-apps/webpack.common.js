@@ -1,5 +1,6 @@
 const path = require("path");
-// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 // const CopyWebpackPlugin = require("copy-webpack-plugin");
 
@@ -40,7 +41,7 @@ module.exports = {
             options: {
               name: "[name].[ext]",
               outputPath: "images/",
-              publicPath: "images/",
+              publicPath: "public/images/",
             },
           },
         ],
@@ -72,9 +73,9 @@ module.exports = {
     //     },
     //   ],
     // }),
-    // new MiniCssExtractPlugin({
-    //   filename: "[name].css",
-    //   chunkFilename: "[id].css",
-    // }),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css",
+    }),
   ],
 };
