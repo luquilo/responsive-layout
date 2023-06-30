@@ -9,7 +9,16 @@ import '../styles/x-large.css';
 
 
 // import gambar
-// import
+const heroImageElement = document.getElementsByClassName('hero-image')[0];
+import heroImageUrl from '../public/images/hero-image_2.jpg';
+console.log(heroImageUrl)
+console.log(heroImageElement)
+
+heroImageElement.setAttribute('src', heroImageUrl);
+
+
+
+
 
 
 

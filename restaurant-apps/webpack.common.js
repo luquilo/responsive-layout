@@ -1,24 +1,17 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 // const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  // entry: {
-  //   app: path.resolve(__dirname, "src/scripts/index.js"),
-  // },
-  // output: {
-  //   filename: "[name].bundle.js",
-  //   path: path.resolve(__dirname, "dist"),
-  //   clean: true,
-  // },
-
   entry: "./src/scripts/index.js",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: '/',
+    publicPath: "/",
+    assetModuleFilename: 'images/[hash][ext][query]',
   },
   module: {
     rules: [
@@ -35,30 +28,29 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/i,
+        test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
-            loader: "file-loader",
+            loader: 'url-loader',
             options: {
-              name: "[name].[ext]",
-              outputPath: "images",
-              publicPath: "images",
-            },
-          },
+              limit: false
+            }
+          }
         ],
+        type: 'asset/resource'
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
         use: [
           {
-            loader: 'babel-loader',
+            loader: "babel-loader",
             options: {
-              presets: ['@babel/preset-env']
-            }
-          }
-        ]
-      }
+              presets: ["@babel/preset-env"],
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
@@ -66,14 +58,6 @@ module.exports = {
       template: "./src/templates/index.html",
       filename: "index.html",
     }),
-    // new CopyWebpackPlugin({
-    //   patterns: [
-    //     {
-    //       from: path.resolve(__dirname, "src/public/"),
-    //       to: path.resolve(__dirname, "dist/"),
-    //     },
-    //   ],
-    // }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css",
