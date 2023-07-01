@@ -1,16 +1,44 @@
-const { merge } = require('webpack-merge');
-const path = require('path');
-const common = require('./webpack.common');
+const { merge } = require("webpack-merge");
+const path = require("path");
+const common = require("./webpack.common");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 
 module.exports = merge(common, {
-  mode: 'development',
-  devtool: 'inline-source-map',
+  module: {
+    rules: [
+      // babel loader
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              presets: ["@babel/preset-env"],
+            },
+          },
+        ],
+      },
+    ],
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css",
+    }),
+  ],
+  mode: "development",
+  devtool: "inline-source-map",
   devServer: {
     headers: {
-      'Access-Control-Allow-Origin': '*',
-      // 'Content-Type': 'text/html',
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "text/html",
     },
-    static: path.resolve(__dirname, 'dist'),
+    static: {
+      directory: path.resolve(__dirname, "dist"),
+      watch: true,
+    },
     open: true,
     port: 9001,
     client: {
@@ -20,5 +48,6 @@ module.exports = merge(common, {
       },
     },
     compress: true,
+    historyApiFallback: true,
   },
 });
