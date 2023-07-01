@@ -3,7 +3,7 @@ const drawerElement = document.querySelector("#drawer");
 const hamburgerButtonElement = document.querySelector("#hamburger");
 const mainElement = document.querySelector("main");
 
-// make the drawer appearence
+// make the drawer appear
 hamburgerButtonElement.addEventListener("click", (event) => {
   drawerElement.classList.toggle("open");
   event.stopPropagation();

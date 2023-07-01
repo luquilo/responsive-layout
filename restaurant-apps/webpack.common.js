@@ -32,18 +32,6 @@ module.exports = {
         generator: {
           filename: "images/[name].[ext]"
         },
-        // use: [
-          // {
-            // loader: "url-loader",
-            // options: {
-            //   fallback: require.resolve("file-loader"),
-            //   name: "images/[name].[ext]",
-            //   publicPath: '/images/',
-            //   limit: false,
-            // },
-          // },
-        // ],
-        // type: "asset/resource",
       },
       {
         test: /\.js$/,
