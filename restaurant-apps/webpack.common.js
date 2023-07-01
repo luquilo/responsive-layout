@@ -1,7 +1,6 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 // const CopyWebpackPlugin = require("copy-webpack-plugin");
 
@@ -11,7 +10,7 @@ module.exports = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
     publicPath: "/",
-    assetModuleFilename: 'images/[hash][ext][query]',
+    assetModuleFilename: "images/[hash][ext][query]",
   },
   module: {
     rules: [
@@ -29,15 +28,22 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: false
-            }
-          }
-        ],
-        type: 'asset/resource'
+        type: "asset",
+        generator: {
+          filename: "images/[name].[ext]"
+        },
+        // use: [
+          // {
+            // loader: "url-loader",
+            // options: {
+            //   fallback: require.resolve("file-loader"),
+            //   name: "images/[name].[ext]",
+            //   publicPath: '/images/',
+            //   limit: false,
+            // },
+          // },
+        // ],
+        // type: "asset/resource",
       },
       {
         test: /\.js$/,
