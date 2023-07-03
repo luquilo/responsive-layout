@@ -2,3 +2,5 @@
 - penggunaan titik koma;
 - 3 style guide terkenal (https://www.dicoding.com/academies/219/tutorials/9309?from=9306) airbnb, google, standard
 - linter javascript = ESLint ==> js pacakge diinstall dari npm / yarn (eslint-plugin-react)
+- ENFORCE CODE STYLE!!! init eslint{https://www.dicoding.com/academies/219/tutorials/9321?from=9316}
+- 
