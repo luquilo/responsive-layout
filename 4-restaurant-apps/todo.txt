@@ -9,5 +9,3 @@ WEBPACK
     src → scripts: untuk menyimpan berkas JavaScript, termasuk entry point.
 
     src → templates: untuk menyimpan aset HTML.
-
-1) 
