@@ -12,3 +12,5 @@
 - concurency
 - error handling 
 - commenting
+- error handling (try catch)
+- comment bagaikan perkataan maaf (karena kita membuat kode yang sulit dipahami orang lain)

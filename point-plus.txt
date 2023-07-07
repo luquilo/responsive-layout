@@ -1,1 +1,5 @@
-membuat style berbeda ketika aktif (on-hover, "on-focus") {memberikan efek tampilan berbeda}
+1 membuat style berbeda ketika aktif (on-hover, "on-focus") {memberikan efek tampilan berbeda}
+
+2 gunakan promise daripada callback! { https://www.dicoding.com/academies/219/tutorials/9386?from=9381 }
+
+3 menggunakan async await lebih bersih daripada menggunakan promise
