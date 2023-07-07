@@ -3,7 +3,8 @@
 - 3 style guide terkenal (https://www.dicoding.com/academies/219/tutorials/9309?from=9306) airbnb, google, standard
 - linter javascript = ESLint ==> js pacakge diinstall dari npm / yarn (eslint-plugin-react)
 - ENFORCE CODE STYLE!!! init eslint{https://www.dicoding.com/academies/219/tutorials/9321?from=9316}
-- variable naming
+- variable naming { https://www.dicoding.com/academies/219/tutorials/9341?from=9336 }
+- make use of default argument
 - function making
 - object and data structure
 - classes
@@ -11,3 +12,5 @@
 - concurency
 - error handling 
 - commenting
+- error handling (try catch)
+- comment bagaikan perkataan maaf (karena kita membuat kode yang sulit dipahami orang lain)
