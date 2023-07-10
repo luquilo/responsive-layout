@@ -1,0 +1,1 @@
+- komponen pembentuk pwa { wajib & opsional } wajib = (application shell, web app manifest, service worker, cache api, fetch api) opsional = ()
