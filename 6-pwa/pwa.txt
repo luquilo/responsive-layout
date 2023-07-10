@@ -1,1 +1,10 @@
-- komponen pembentuk pwa { wajib & opsional } wajib = (application shell, web app manifest, service worker, cache api, fetch api) opsional = ()
+- komponen pembentuk pwa { wajib & opsional } 
+wajib = (application shell, web app manifest, service worker, cache api, fetch api) 
+opsional = (indexed db, web socket = komunikasi real time, notifications)
+- ssr, csr
+- spa, mpa
+- csr + spa (sangat disarankan untuk pwa)
+
+### APPLICATION SHELL ###
+
+## application shell ==> menyimpan ui di perangkat
