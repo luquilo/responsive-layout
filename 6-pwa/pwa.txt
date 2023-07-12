@@ -8,3 +8,7 @@ opsional = (indexed db, web socket = komunikasi real time, notifications)
 ### APPLICATION SHELL ###
 
 ## application shell ==> menyimpan ui di perangkat
+
+- htmlWebpackPlugin => membuat berkas html
+- copyWebpackPlugin => menyalin aset statis dari folder public ke folder dist
+- dev server
