@@ -3,3 +3,8 @@ membuat layar responsive pakai grid,
 ini link github contoh pemakaian media query + grid
 https://github.com/dicodingacademy/a219-mfwde-labs/tree/204-dicoding-blog-other-optimization
 
+
+
+## set up webpack { https://www.dicoding.com/academies/219/tutorials/9436 }
+
+## cara ubah favicon { https://www.dicoding.com/academies/219/tutorials/9436 }
